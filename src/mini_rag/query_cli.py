@@ -2,7 +2,7 @@
 import argparse
 import faiss
 import numpy as np
-from src.embed import Embedder
+from mini_rag.embed import Embedder
 
 def load_texts(emb_path):
     return np.load(emb_path.replace(".npy", "_texts.npy"), allow_pickle=True)
