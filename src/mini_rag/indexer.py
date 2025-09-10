@@ -3,8 +3,8 @@ import argparse
 import faiss
 import numpy as np
 import os
-from src.docs_loader import load_pdf_text, chunk_text
-from src.embed import Embedder
+from mini_rag.docs_loader import load_pdf_text, chunk_text
+from mini_rag.embed import Embedder
 
 def build_index(embeddings: np.ndarray) -> faiss.IndexFlatIP:
     # normalize for cosine similarity via inner product
