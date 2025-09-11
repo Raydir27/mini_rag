@@ -1,7 +1,80 @@
-__pycache__/
-*.pyc
-.env
+# Python virtual envs
+.venv/
 venv/
-data/
-index.faiss
-embeddings.npy
+env/
+ENV/
+.venv.bak/
+
+# Bytecode / caches
+__pycache__/
+*.py[cod]
+*$py.class
+
+# pytest cache
+.pytest_cache/
+
+# coverage and test output
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+nosetests.xml
+
+# Distribution / build / packaging
+build/
+dist/
+*.egg-info/
+pip-wheel-metadata/
+*.egg
+*.whl
+
+# egg info from old installs
+mini_rag.egg-info/
+
+# installed files (wheel/sdist)
+.eggs/
+
+# virtualenv/proc files
+.python-version
+
+# IDE / editor configs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# sensitive / env files
+.env
+.env.* 
+secrets.toml
+*.pem
+*.key
+
+# Jupyter
+.ipynb_checkpoints/
+
+# logs
+*.log
+
+# temporary files
+*.tmp
+*.swp
+*~ 
+
+# local runtime artifacts (if you generate)
+run_sanity_output/
+reports/
+
+# local build artifacts that might be present in your tree
+build/
+build/**
+
+# node / frontend (if any accidental files)
+node_modules/
+
+# Mac/Windows metadata
+desktop.ini
