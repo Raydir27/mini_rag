@@ -1,7 +1,23 @@
-openai>=1.0.0
-sentence-transformers>=2.2.2   # optional, remove if you do not need it
-faiss-cpu>=1.7.3
-PyPDF2>=3.0.0
-pytest>=7.0.0
-numpy>=1.24.0
-tqdm>=4.0.0
+# Core runtime
+pypdf
+fastapi
+uvicorn[standard]
+openai
+tqdm
+python-dotenv
+pydantic
+requests
+python-multipart
+
+# Numerical / ML
+numpy>=1.21
+sentence-transformers>=2.2.2
+sentencepiece
+
+# Vector search (optional on Windows)
+faiss-cpu ; platform_system != "Windows"
+
+# Notes:
+# - PyPDF2 is deprecated; replaced with pypdf.
+# - On Windows, `faiss-cpu` can be tricky to install; the project will fall back to a NumPy-based search if faiss is not installed.
+# - If you don't need local embeddings (e.g., you only use OpenAI embeddings), you may remove `sentence-transformers` and `sentencepiece`.

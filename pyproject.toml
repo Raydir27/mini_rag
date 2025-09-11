@@ -1,13 +1,32 @@
 [build-system]
-requires = ["setuptools>=61.0", "wheel"]
+requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "mini_rag"
-version = "0.0.1"
-description = "mini RAG internship project"
-authors = [{name = "Your Name"}]
+version = "0.1.0"
+description = "A small RAG-based Q&A app for local documents"
+authors = [
+  { name = "Rajarshi Biswas" }
+]
 readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+dependencies = [
+  "numpy>=1.21",
+  "sentence-transformers>=2.2.2",
+  "fastapi",
+  "uvicorn[standard]",
+  "pydantic",
+  "tqdm",
+  "requests",
+  "python-dotenv",
+  "pypdf>=4.0.0",
+  "python-multipart",
+]
 
+[tool.setuptools]
+package-dir = {"" = "src"}
+# Use a single packages/find configuration
 [tool.setuptools.packages.find]
 where = ["src"]
