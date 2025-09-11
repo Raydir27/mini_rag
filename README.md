@@ -57,7 +57,7 @@ mini\_rag/
 ├── run\_sanity.py                # basic sanity check script
 └── .github/workflows/ci.yml     # GitHub Actions CI config
 ```
-````
+
 
 ---
 
@@ -66,7 +66,7 @@ mini\_rag/
 1. **Install runtime dependencies**
    ```bash
    python -m pip install -r requirements.txt
-````
+   ```
 
 2. **(Optional) Dev setup with tests**
 
