@@ -3,7 +3,7 @@
 A compact Retrieval-Augmented-Generation (RAG) app for local Q&A over PDFs / text files.  
 User uploads PDFs / text files → text is extracted & split → embeddings are created → a vector index is built and queried via CLI or FastAPI.
 
-[![CI_dev](https://github.com/YOUR-USERNAME/YOUR-REPO/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/YOUR-USERNAME/YOUR-REPO/actions/workflows/ci.yml)
+[![CI_dev](https://github.com/Raydir27/mini_rag/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/YOUR-USERNAME/YOUR-REPO/actions/workflows/ci.yml)
 
 ---
 
