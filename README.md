@@ -1,4 +1,3 @@
-```markdown
 # mini_rag — small local RAG demo
 
 A compact Retrieval-Augmented-Generation (RAG) app for local Q&A over PDFs / text files.  
@@ -33,7 +32,7 @@ User uploads PDFs / text files → text is extracted & split → embeddings are 
 ---
 
 ## Project Structure
-```
+```markdown
 
 mini\_rag/
 ├── src/
@@ -57,7 +56,7 @@ mini\_rag/
 ├── requirements-dev.txt         # runtime + dev/test deps
 ├── run\_sanity.py                # basic sanity check script
 └── .github/workflows/ci.yml     # GitHub Actions CI config
-
+```
 ````
 
 ---
