@@ -108,5 +108,3 @@ mini\_rag/
 * Expand FastAPI endpoints with file upload support.
 * Experiment with hybrid indexes (BM25 + embeddings).
 * Optional Dockerfile for reproducible setup.
-
-```
