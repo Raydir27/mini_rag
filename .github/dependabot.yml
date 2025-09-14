@@ -5,28 +5,28 @@
 
 version: 2
 updates:
-  # For production dependencies
+  # Single pip entry that covers all requirements files in the repo root
   - package-ecosystem: "pip"
-    directory: "/" # Location of requirements.txt
+    directory: "/"               # Dependabot will scan requirements.txt, requirements-dev.txt, etc.
     schedule:
-      interval: "weekly"
+      interval: "weekly"         # daily | weekly | monthly
+    open-pull-requests-limit: 10
     commit-message:
       prefix: "deps"
     labels:
       - "dependencies"
+    # Only update direct dependencies by default; remove or change if you want transitive upgrades
     allow:
       - dependency-type: "direct"
 
-  # For dev/test dependencies
-  - package-ecosystem: "pip"
-    directory: "/" # Location of requirements-dev.txt
+  # Keep GitHub Actions up to date (optional, recommended)
+  - package-ecosystem: "github-actions"
+    directory: "/.github/workflows"
     schedule:
       interval: "weekly"
+    open-pull-requests-limit: 5
     commit-message:
-      prefix: "deps-dev"
+      prefix: "ci(deps)"
     labels:
       - "dependencies"
-      - "dev-dependencies"
-    allow:
-      - dependency-type: "direct"
-
+      - "ci"
